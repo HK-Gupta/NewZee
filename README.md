@@ -50,30 +50,6 @@ The Flutter News App is a mobile application that fetches news articles using th
     flutter run
     ```
 
-## Configuration
-To use the News API, you need an API key. Follow these steps to configure your API key:
-
-1. Get your API key from [News API](https://newsapi.org/).
-2. Create a file named `.env` in the root of your project and add your API key:
-    ```env
-    NEWS_API_KEY=your_api_key_here
-    ```
-3. Update your `pubspec.yaml` file to include the `flutter_dotenv` package:
-    ```yaml
-    dependencies:
-      flutter:
-        sdk: flutter
-      flutter_dotenv: ^5.0.2
-    ```
-4. Load the environment variables in your `main.dart`:
-    ```dart
-    import 'package:flutter_dotenv/flutter_dotenv.dart' as dotenv;
-
-    void main() async {
-      await dotenv.load(fileName: ".env");
-      runApp(MyApp());
-    }
-    ```
 
 ## Usage
 1. Open the app.
